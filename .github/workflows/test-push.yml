@@ -12,6 +12,8 @@ jobs:
       options: --user root
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
       - uses: gradle/wrapper-validation-action@v1
       - run: gradle applyPatches
       - run: gradle :quilt-loom:build :quilt-loom:check -x :quilt-loom:test --stacktrace --warning-mode fail
