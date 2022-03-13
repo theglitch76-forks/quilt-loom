@@ -13,7 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: gradle/wrapper-validation-action@v1
-      - run: gradle applyPatches :quilt-loom:build :quilt-loom:check -x :quilt-loom:test --stacktrace --warning-mode fail
+      - run: gradle applyPatches
+      - run: gradle :quilt-loom:build :quilt-loom:check -x :quilt-loom:test --stacktrace --warning-mode fail
       - uses: actions/upload-artifact@v2
         with:
           name: loom-output

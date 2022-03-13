@@ -5,7 +5,7 @@ Subject: [PATCH] Rebrand to Quilt and set up publishing for our maven
 
 
 diff --git a/build.gradle b/build.gradle
-index 15ceecae59d19502cb20e12c82dfed6c15183a1a..f87c1fdecfba98722ddc76a1aa76e4744cff6b23 100644
+index c5d21ddcaf0f16c8ccfe10071795f2a706223987..8ee3470bf339674d8d59ba98f0fa90cab6bbc095 100644
 --- a/build.gradle
 +++ b/build.gradle
 @@ -28,7 +28,7 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
